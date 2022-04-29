@@ -3,13 +3,13 @@ import { TouchableOpacity } from 'react-native'
 
 
 export const Container = styled(TouchableOpacity)`
-  padding: 15px;
+  padding: 18px;
   align-items: center;
-  border-radius: 7px;
-  background-color: #008000;
-  margin-top: 28px;
-  margin-left: 10px;
-  margin-right: 10px;
+  border-radius: 20px;
+  background-color: green;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 `;
 
 export const Title = styled.Text`

@@ -1,37 +1,33 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-
-        margin-top: 30px;
         flex: 1;
-        background-color: #000000 ;
-
 `;
 export const Title = styled.Text`
 
         text-align: center;
-        margin-top:50px ;
-        color: #fff;
+        margin-top: 90px ;
+        color: white;
         font-size:24px;
         font-weight:bold ;
 
 `;
 export const Input = styled.TextInput`
 
-        background-color: #1f1e25;
+        background-color: #CD853F;
         font-size: 18px;
-        padding: 10px;
+        padding: 15px;
         margin-top: 45px;
-        border-radius: 7px;
-        margin-left: 10px;
-        margin-right: 10px;
+        border-radius: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         color: white;
 `;
 
 export const ResultadoText = styled.Text`
-
-        font-size: 20px ;
-        color: white;
-        text-align: center;
-        margin-top: 40px;
+        font-size: 18px ;
+        font-weight: bold;
+        color: #000;
+        margin-left: 15px;
+        margin-top: 15px;
 `
