@@ -6,7 +6,7 @@ export const Container = styled(TouchableOpacity)`
   padding: 18px;
   align-items: center;
   border-radius: 20px;
-  background-color: green;
+  background-color: #000;
   margin-top: 30px;
   margin-left: 15px;
   margin-right: 15px;

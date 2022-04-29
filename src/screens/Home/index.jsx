@@ -17,21 +17,21 @@ export default function Home() {
     const [totalCoal, setTotalCoal] = useState(0)
 
     function calculateAmoutOfMeat() {
-        const carvao = 5
-        const carnePadrao = 0.400
-        const carneHomem = man * carnePadrao
-        const carneMulher = (carnePadrao - (carnePadrao * 0.25)) * women
-        const carneCrianca = (carnePadrao / 2) * children
-        const TotalDeCarne = carneHomem + carneMulher + carneCrianca
-        const totalCarvao = (TotalDeCarne * carvao) / 6
+        const coal = 5
+        const defaultMeat = 0.400
+        const meatMan = man * defaultMeat
+        const meatWomen = (defaultMeat - (defaultMeat * 0.25)) * women
+        const meatChild = (defaultMeat / 2) * children
+        const totalMeat = meatMan + meatWomen + meatChild
+        const totalCoal = (totalMeat * coal) / 6
 
         if (women !== 0 || man !== 0 || children !== 0) {
 
-            setChildMeatResult(carneCrianca.toFixed(1))
-            setManMeatResult(carneHomem.toFixed(1))
-            setWomenMeatResult(carneMulher.toFixed(1))
-            setTotalMeatResult(TotalDeCarne.toFixed(1))
-            setTotalCoal(totalCarvao.toFixed(1))
+            setChildMeatResult(meatChild.toFixed(1))
+            setManMeatResult(meatMan.toFixed(1))
+            setWomenMeatResult(meatWomen.toFixed(1))
+            setTotalMeatResult(totalMeat.toFixed(1))
+            setTotalCoal(totalCoal.toFixed(1))
         } else {
             alert("Infome a quantididade correta.")
         }
@@ -42,7 +42,7 @@ export default function Home() {
         <Container>
 
             <ImageBackground
-                source={require('../../../assets/essa.jpg')}
+                source={require('../../../assets/bbq.webp')}
                 style={styles.imageBackground}
             >
 
@@ -90,6 +90,5 @@ const styles = StyleSheet.create({
     imageBackground: {
         flex: 1,
         resizeMode: "cover",
-        marginTop: 0
     }
 })

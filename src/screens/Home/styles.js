@@ -2,12 +2,13 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
         flex: 1;
+        
 `;
 export const Title = styled.Text`
 
         text-align: center;
-        margin-top: 90px ;
-        color: white;
+        margin-top: 80px ;
+        color: #000;
         font-size:24px;
         font-weight:bold ;
 
@@ -27,7 +28,7 @@ export const Input = styled.TextInput`
 export const ResultadoText = styled.Text`
         font-size: 18px ;
         font-weight: bold;
-        color: #000;
+        color: #ffff;
         margin-left: 15px;
-        margin-top: 15px;
+        margin-top: 10px;
 `
